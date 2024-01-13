@@ -1,0 +1,418 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #DE5935;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* navigation styling */
+
+
+.navigation{
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100vw;
+  height: 15vh;
+  background-color: #F7CD46;
+  position: fixed;
+  top:0
+}
+
+.LogoSection{
+  justify-self: flex-start;
+}
+
+.items{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.menuitems{
+  margin-left:400px;
+}
+
+.items li{
+  list-style: none;
+  padding:24px;
+  font-size: 28px;
+}
+
+.items li a{ 
+color:rgb(41, 70, 95);
+}
+
+.item{
+  position:relative;
+}
+
+/* .active::after{
+  content:"";
+  width: 60px;
+  height: 3px;
+  background-color: green;
+  position: fixed;
+  top:36px;
+  right:14;
+} */
+
+
+/* Login form */
+
+
+
+.login_form,.RegisterForm{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 450px;
+  height:580px;
+  background-color: #430f01;
+
+  margin-left: 50%;
+  border-radius: 10px;
+
+
+
+}
+
+.login_form{
+  padding:40px;
+  gap:20px;
+}
+
+.submit-login{
+  width:80%;
+  margin: 24px;
+  height: 56px;
+  border: 1px solid white;
+  color: white;
+  font-size: 24px;
+}
+.loginForm div{
+  margin-bottom: 12px;
+}
+.errmsg{
+  color:red;
+  font-size: 24px;
+}
+.offscreen{
+  /* display: none; */
+}
+.heading-login{
+  margin: 0;
+}
+
+.sectioned{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 24px;
+}
+
+label{
+
+  margin-left: 0px;
+  font-size: 24px;
+  padding:2px;
+  align-self: flex-start;
+  color:#5AC3B0;
+}
+
+input[type='text'],input[type='password']{
+
+  background-color: white;
+  width:400px;
+  height:40px;
+  border-radius: 6px;
+  border:2px solid black;
+}
+
+.submit{
+
+  align-self: center;
+  margin:12px;
+  width: 60%;
+  padding-bottom: 24px;
+  background-color: rgb(162, 248, 162);
+  font-size: large;
+  font-size: 24px;
+  text-align: center;
+  color:black;
+}
+
+.submit:hover{
+
+
+  background-color: rgb(143, 209, 143);
+
+}
+
+.formHeading{
+
+  font-weight: 800;
+  font-size: 24px;
+  align-self: flex-start;
+  color:#5AC3B0;
+  margin-top: 24px;
+  padding:24px;
+}
+
+input, select, textarea{
+    color: #060505;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.blogsCards{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding:24px;
+
+}
+
+.card{
+
+  width: 300px;
+  height: 300px;
+  border: 1px solid yellowgreen;
+  background-color: rgb(233, 184, 37);
+  border-radius: 6%;
+  color:#060505;
+  font-size: larger;
+  font-weight: 700;
+  padding:6px;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover{
+
+
+  border: 1px solid yellowgreen;
+  background-color: yellowgreen;
+ 
+}
+
+.section_two{
+  width: 100vw;
+  height: 60vh;
+}
+.cardcreated{
+  justify-self: flex-end;
+  align-self: flex-end;
+  font-size: 12px;
+  padding-right: 10px;
+  color: #022007;
+}
+
+.blogContent{
+
+  width: 70vw;
+  text-align: justify;
+  padding:12px;
+  margin: 60px;
+  overflow-wrap: anywhere;
+  border:1px solid rgb(67, 25, 25);
+  background-color: rgb(246, 198, 198);
+  color: #060505;
+  font-size: 21px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+
+.blogTitle{
+
+  width: 70vw;
+  text-align: center;
+  padding:12px;
+  margin: 60px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.commentHeading{
+   width: 70vw;
+  text-align: center;
+  padding:12px;
+  margin: 60px;
+}
+
+.Comments{
+  width: 70vw;
+  text-align: justify;
+  padding:12px;
+  margin: 60px;
+  overflow-wrap: anywhere;
+  display:flex;
+  flex-direction: column;
+  gap:6px;
+}
+.comment{
+
+  width:70vw;
+  background-color: rgb(117, 114, 114);
+  border: 1px solid black;
+  padding:6px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  position: relative;
+}
+.commentAddedTime{
+
+  text-align: right;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+
+.deleteComment{
+    position: absolute;
+    right: 1px;
+    width: 53px;
+    font-size: 8px;
+    top: 1px;
+    background-color: red;
+    color: black;
+}
+
+.blogEditor{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 600px;
+  justify-content: center;
+  align-items: center;
+  gap:24px;
+}
+
+.blog-title{
+  width: 38vw;
+  height: 48px;
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: rgb(235, 221, 221);
+  padding: 12px;
+}
+.createBlogButton{
+
+  width: 30vw;
+  height:60px;
+  border-color:white;
+  font-size: 24px;
+}
+.publishLabel{
+  font-size: 30px;
+  color: rgb(196, 237, 30);
+}
+
+#publication{
+
+  height: 20px;
+  width: 20px;
+  outline: 3px solid black;
+}
+
+.addCommentSection{
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2px;
+  
+}
+
+.addComment{
+
+  width:68vw;
+  background-color: white;
+  border: 1px solid rgb(119, 117, 117);
+  padding:6px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
